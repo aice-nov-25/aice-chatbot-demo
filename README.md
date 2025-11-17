@@ -33,8 +33,7 @@ GOOGLE_API_KEY=your-api-key-here
 ### 3. Install Dependencies
 
 ```bash
-uv venv
-uv pip install .
+uv sync
 ```
 
 ### 4. Run
