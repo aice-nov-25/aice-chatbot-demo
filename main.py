@@ -12,7 +12,7 @@ def main():
 
     # Initialize chat model
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.0-flash-thinking-exp-1219",
+        model="gemini-flash-latest",
         temperature=0,
     )
 
