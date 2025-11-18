@@ -1,15 +1,24 @@
 # AICE Chatbot Demo - Week 2
 
-A complete working chatbot demonstrating LangChain integration with streaming responses and conversation memory.
+This demo contains two equivalent chatbot implementations showing the same features with different frameworks:
 
-## Features
+- **LangChain Version** (Python/Streamlit) - Root directory
+- **AI SDK Version** (TypeScript/Next.js) - `ai-sdk-version/` folder
+
+Both demonstrate streaming responses and conversation memory with minimal setup.
+
+---
+
+## LangChain Version (Python/Streamlit)
+
+### Features
 
 - **LangChain Integration**: Connected to Google Gemini via LangChain
 - **Streaming Responses**: Real-time response streaming for better UX
 - **Conversation Memory**: Maintains chat history for context-aware responses
 - **Simple Setup**: Minimal configuration required
 
-## Setup
+### Setup
 
 ### 1. Clone or Download
 
@@ -73,8 +82,22 @@ This is a foundation for building more advanced features:
 - Add local model support (Ollama)
 - Add observability (Langfuse)
 
-## Requirements
+### Requirements
 
 - Python 3.11+
 - Google AI API key (free from [ai.google.dev](https://ai.google.dev/))
 - [uv](https://docs.astral.sh/uv/) for package management
+
+---
+
+## AI SDK Version (TypeScript/Next.js)
+
+See the [`ai-sdk-version/`](./ai-sdk-version/) folder for a complete equivalent implementation using Vercel AI SDK.
+
+Key differences:
+- TypeScript with full type safety
+- Next.js with React for the UI
+- Built-in `useChat` hook (no manual state management)
+- Production-ready architecture
+
+Full setup instructions in [`ai-sdk-version/README.md`](./ai-sdk-version/README.md)
